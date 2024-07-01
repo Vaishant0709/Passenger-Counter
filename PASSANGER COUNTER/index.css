@@ -1,0 +1,213 @@
+nav,header,footer{
+  display: block;
+}
+body{
+  background-image: url(bgimg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 2000px 950px;
+  line-height: 1;
+  margin:0;
+  font-family:'Architects Daughter','san serif' ;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+h1{
+  font-family:'Architects Daughter','san serif' ;
+}
+h1.top-heading{
+  margin-top: 70px;
+  margin-left: 650px;
+  font-size: 56px;
+}
+h2.counter{
+  font-family:'Architects Daughter','san serif' ;
+  margin-left: 890px;
+  margin-top: 100px;
+  font-size: 80px;
+
+}
+.prev h2{
+  margin-left: 550px;
+  margin-top: 75px;
+  font-size: 45px;
+}
+
+
+
+.button1 {
+  font-family:'Architects Daughter','san serif' ;
+  margin-top: 50px;
+ margin-left:830px ;
+  padding: 1.3em 3em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button1:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button1:active {
+  transform: translateY(-1px);
+}
+
+
+.button2 {
+  font-family:'Architects Daughter','san serif' ;
+  margin-top: 70px;
+  margin-left: 800px;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     hsl(340deg 100% 16%) 0%,
+     hsl(340deg 100% 32%) 8%,
+     hsl(340deg 100% 32%) 92%,
+     hsl(340deg 100% 16%) 100%
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 25px;
+  color: white;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .button2:hover {
+  filter: brightness(110%);
+ }
+ 
+ .button2:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .button2:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ .button2:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ .button2:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ .button2:focus:not(:focus-visible) {
+  outline: none;
+ }
+
+
+
+
+ .button {
+  margin-left: 820px;
+  margin-top: 50px;
+  font-family:'Architects Daughter','san serif' ;
+  font-size: 25px;
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #94ec88;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #7cebeb;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}

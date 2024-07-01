@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="index.js">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+  </style>
+  <title>Passenger Counter App</title>
+</head>
+
+<body>
+  <div class="heading">
+    <h1 class="top-heading">
+      PASSENGER COUNTER
+    </h1>
+  </div>
+  <div class="counter">
+    <h2 id="counter" id="counter"class="counter">
+      0
+    </h2>
+  </div>
+  <div class="btns">
+    <div class="inc-btn">
+      <button class="button2" id="inc_btn" onclick="increment()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> ADD PASSENGER
+        </span>
+      </button>
+    </div>
+    <div class="save-btn">
+      <button class="button1" id="save_btn" onclick="save()">SAVE</button>
+    </div>
+    <div class="reset-btn">
+      <button class="button type1" onclick="reset()">
+        <span class="btn-txt">RESET</span>
+      </button>
+      
+    </div>
+  </div>
+  <div class="prev">
+    <h2 id="prev-ent">
+      PREVIOUS ENTRIES :
+    </h2>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
